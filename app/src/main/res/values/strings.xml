@@ -8,4 +8,8 @@
     <string name="text_label_1">Home</string>
     <string name="text_label_2">Add</string>
     <string name="text_label_3">Info</string>
+    <string name="choose">Misafidy</string>
+    <string name="your_company">Fitadiavana PV</string>
+    <string name="research_company">Hitady</string>
+    <string name="company_not_found">Tsy hita ilay tedavina</string>
 </resources>

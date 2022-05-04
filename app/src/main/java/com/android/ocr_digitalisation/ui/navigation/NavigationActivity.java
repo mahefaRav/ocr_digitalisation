@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.MenuItem;
 
 import com.android.ocr_digitalisation.R;
+import com.android.ocr_digitalisation.ui.digitalisation.DigitalisationDetailsActivity;
+import com.android.ocr_digitalisation.ui.infoUser.Infoperson;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class NavigationActivity extends AppCompatActivity {
@@ -58,21 +60,23 @@ public class NavigationActivity extends AppCompatActivity {
 
 
                         case R.id.action_home:
-                            // Intent intent = new Intent(getBaseContext(), .class);
-                            // startActivity(intent);
-                            //  finish();
+                            Intent intent = new Intent(getBaseContext(), DigitalisationDetailsActivity.class);
+                            startActivity(intent);
+                            finish();
                             break;
 
                         case R.id.action_add:
                             // intent = new Intent(getBaseContext(), DigitalisationSearch.class);
                             // startActivity(intent);
+                            Log.i("Message:","Miandry alo anh!");
                             finish();
                             break;
 
 
                         case R.id.action_info:
-                            //navigationView.setSelectedItemId(R.id.action_home);
-                            // showDrawerLayout();
+                            intent = new Intent(getBaseContext(), Infoperson.class);
+                            startActivity(intent);
+                            finish();
                             break;
 
                         default:

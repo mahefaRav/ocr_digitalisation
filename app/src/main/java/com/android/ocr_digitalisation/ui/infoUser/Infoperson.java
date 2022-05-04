@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.android.ocr_digitalisation.R;
 
-public class infoperson extends AppCompatActivity {
+public class Infoperson extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -11,6 +11,7 @@ import android.view.MenuItem;
 
 import com.android.ocr_digitalisation.R;
 import com.android.ocr_digitalisation.ui.digitalisation.DigitalisationDetailsActivity;
+import com.android.ocr_digitalisation.ui.digitalisation.DigitalisationPv;
 import com.android.ocr_digitalisation.ui.infoUser.Infoperson;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -19,23 +20,11 @@ public class NavigationActivity extends AppCompatActivity {
     private ActionBarDrawerToggle actionBarDrawerToggle;
     private Bundle instance = null;
     private int idselected=0;
-    private int idPage =0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         instance = savedInstanceState;
-    }
-
-    @Override
-    public void onStart(){
-        super.onStart();
-        configurationGlobal();
-    }
-
-    public void configurationGlobal(){
-        Log.i("TONGA ATO","configurationGlobal");
-        this.configureBottomNavigationView(idPage);
     }
 
     public void configureBottomNavigationView(final int id){
@@ -46,19 +35,14 @@ public class NavigationActivity extends AppCompatActivity {
             idselected = id;
             navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
 
-
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    //  item.setIcon(R.drawable.circle);
-
                     // checkColor();
                     if (item.getItemId() == id) {
                         return true;
                     }
 
                     switch (item.getItemId()) {
-
-
                         case R.id.action_home:
                             Intent intent = new Intent(getBaseContext(), DigitalisationDetailsActivity.class);
                             startActivity(intent);
@@ -66,23 +50,20 @@ public class NavigationActivity extends AppCompatActivity {
                             break;
 
                         case R.id.action_add:
-                            // intent = new Intent(getBaseContext(), DigitalisationSearch.class);
-                            // startActivity(intent);
-                            Log.i("Message:","Miandry alo anh!");
+                            intent = new Intent(getBaseContext(), DigitalisationPv.class);
+                            startActivity(intent);
                             finish();
+                            Log.i("Message:","Miandry alo anh!");
                             break;
-
 
                         case R.id.action_info:
                             intent = new Intent(getBaseContext(), Infoperson.class);
                             startActivity(intent);
-                            finish();
                             break;
 
                         default:
                             break;
                     }
-
                     return true;
                 }
             });

@@ -11,14 +11,16 @@ import android.widget.Button;
 
 import com.android.ocr_digitalisation.R;
 import com.android.ocr_digitalisation.ui.login.LoginActivity;
+import com.android.ocr_digitalisation.ui.navigation.NavigationActivity;
 
-public class DigitalisationDetailsActivity extends AppCompatActivity {
+public class DigitalisationDetailsActivity extends NavigationActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_digitalisation_details);
-    }
+        setContentView(R.layout.activity_digitalisation_details_drawer);
+        this.configureBottomNavigationView(R.id.action_home);
 
+    }
 
 }

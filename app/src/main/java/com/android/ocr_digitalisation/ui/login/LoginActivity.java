@@ -21,13 +21,14 @@ public class LoginActivity extends AppCompatActivity {
 
     private void setOnclickListener(){
         final Button loginButton=findViewById(R.id.login);
-
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(LoginActivity.this, DigitalisationDetailsActivity.class);
-                    startActivity(intent);
+                    startActivity(new Intent(getBaseContext(), DigitalisationDetailsActivity.class));
+                    finish();
+                    // Intent intent = new Intent(LoginActivity.this, DigitalisationDetailsActivity.class);
+                    // startActivity(intent);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

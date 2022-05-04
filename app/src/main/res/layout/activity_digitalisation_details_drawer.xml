@@ -6,6 +6,8 @@
     tools:context=".ui.digitalisation.DigitalisationDetailsActivity"
     android:id="@+id/drawerLayout">
 
+    <include
 
+        layout="@layout/activity_digitalisation_details" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/side_content"
+    android:id="@+id/side_content_statistique"
     android:background="@color/colorWhiteOpaque"
     tools:context=".ui.digitalisation.DigitalisationDetailsActivity">
 
@@ -29,25 +29,34 @@
             app:cardElevation="0dp"
             app:cardBackgroundColor="@android:color/transparent"
             android:layout_height="wrap_content">
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/colorGreenBarDark"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_marginTop="40dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/mosk_medium_500"
-                    android:layout_gravity="center_horizontal"
-                    android:gravity="center"
-                    android:text="@string/choose"
-                    android:textColor="@color/colorBlack2"
-                    android:textSize="30sp"
-                    >
-                </TextView>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_bold"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="@string/statistique"
+                        android:textColor="@color/colorBlack2"
+                        android:textSize="30sp"
+                        >
+                    </TextView>
 
-            </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
         </androidx.cardview.widget.CardView>
 
@@ -58,31 +67,15 @@
             android:layout_height="0dp">
             <LinearLayout
                 android:orientation="vertical"
-                android:background="@android:color/transparent"
-                android:layout_width="match_parent" android:layout_height="match_parent">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:gravity="center"
-                    android:text="@string/your_company"
-                    android:fontFamily="@font/mosk_bold_700"
-                    android:textSize="30sp"
-                    android:textColor="@color/colorBlack2"
+                android:background="@color/colorWhiteOpaque"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                    android:textStyle="bold"
-                    android:layout_marginTop="-5dp"
-
-                    >
-                </TextView>
-
-
-
-                <RelativeLayout
-                    android:background="@android:color/transparent"
-
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@color/colorWhiteOpaque"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="2dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <RelativeLayout
@@ -95,36 +88,34 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="30dp"
                             android:layout_marginRight="30dp"
-                            android:background="@drawable/rouded_search_edittext"
+                            android:background="@drawable/style_search"
                             android:textSize="14sp"
-                            android:fontFamily="@font/roboto_medium"
-                            android:hint="@string/research_company"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="@string/research_candidat"
+                            android:textColorHint="@color/colorBlack2"
+                            android:paddingBottom="5dp"
+                            android:paddingStart="14dp"
+                            android:paddingVertical="12dp"
                             android:imeOptions="actionSearch"
                             android:textColor="@color/colorBlack2"
-                            android:paddingBottom="5dp"
-                            android:paddingLeft="14dp"
-                            android:paddingVertical="12dp"
-                            android:singleLine="true" >
+                            android:singleLine="true" />
 
-                        </EditText>
                         <ImageButton
                             android:id="@+id/search_button"
                             android:layout_width="43dp"
                             android:layout_height="43dp"
                             android:layout_marginBottom="-7dp"
-
-                            android:layout_alignRight="@id/searchView"
+                            android:layout_alignEnd="@id/searchView"
                             android:scaleType="fitXY"
                             android:src="@drawable/ic_search"
-                            android:background="@null"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="0dp"
+                            android:layout_marginEnd="0dp"
                             android:text="Button"/>
 
 
                     </RelativeLayout>
 
-                </RelativeLayout>
+                </LinearLayout>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/content"
@@ -148,29 +139,11 @@
             app:cardElevation="0dp"
             android:layout_weight="0.45"
             android:layout_height="0dp">
-            <LinearLayout
-                android:layout_marginTop="10dp"
-                android:gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:paddingLeft="40dp"
-                android:paddingRight="40dp"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/company_not_found"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_medium"
-                    android:gravity="center"
-                    android:text="@string/company_not_found"
-                    android:textColorLink="@color/colorGreenBarDark">
-
-                </TextView>
-
-            </LinearLayout>
+            <include
+                layout="@layout/bottom_navigation" />
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
+
 
 </RelativeLayout>

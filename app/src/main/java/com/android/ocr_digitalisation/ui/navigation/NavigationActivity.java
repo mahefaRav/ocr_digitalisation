@@ -58,13 +58,13 @@ public class NavigationActivity extends AppCompatActivity {
 
 
                         case R.id.action_home:
-                            Intent intent = new Intent(getBaseContext(), DigitalisationDetails.class);
-                            startActivity(intent);
+                            // Intent intent = new Intent(getBaseContext(), .class);
+                            // startActivity(intent);
                             //  finish();
                             break;
 
                         case R.id.action_add:
-                            intent = new Intent(getBaseContext(), DigitalisationSearch.class);
+                            // intent = new Intent(getBaseContext(), DigitalisationSearch.class);
                             // startActivity(intent);
                             finish();
                             break;

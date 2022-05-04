@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OCR-digitalisation</string>
+    <string name="action_sign_in_short">HIDITRA</string>
+    <string name="action_sign_in_qr">QR</string>
+    <string name="textview_username">Anarana</string>
+    <string name="textview_password">Tenimiafina</string>
+    <string name="login_error">" x Tsy mety ny solonanarana na teny miafina "</string>
+    <string name="text_label_1">Home</string>
+    <string name="text_label_2">Add</string>
+    <string name="text_label_3">Info</string>
+</resources>

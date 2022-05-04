@@ -60,6 +60,16 @@
             android:text="District:" />
 
         <TextView
+            android:id="@+id/districtLabel"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="110dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="District:" />
+
+        <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

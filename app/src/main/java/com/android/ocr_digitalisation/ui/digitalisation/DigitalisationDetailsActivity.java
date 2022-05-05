@@ -15,12 +15,16 @@ import com.android.ocr_digitalisation.ui.navigation.NavigationActivity;
 
 public class DigitalisationDetailsActivity extends NavigationActivity {
 
+    public Bundle instance = null;
+    DigitalisationDetailsActivity activity = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setIdPage(R.id.action_home);
+        this.instance = savedInstanceState;
         setContentView(R.layout.activity_digitalisation_details_drawer);
-        this.configureBottomNavigationView(R.id.action_home);
-
+        activity = this;
     }
 
 }

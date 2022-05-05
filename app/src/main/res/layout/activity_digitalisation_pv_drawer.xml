@@ -8,6 +8,6 @@
 
     <include
 
-        layout="@layout/activity_digitalisation_details" />
+        layout="@layout/activity_digitalisation_pv" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

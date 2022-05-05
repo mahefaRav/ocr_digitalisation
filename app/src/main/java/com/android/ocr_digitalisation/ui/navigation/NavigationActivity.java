@@ -52,44 +52,46 @@ public class NavigationActivity extends AppCompatActivity {
     public void configureBottomNavigationView(final int id){
 
         final BottomNavigationView navigationView = findViewById(R.id.bottomNavigationView);
-        if(navigationView!=null) {
-            navigationView.setPadding(0, 0, 0, 40);
-            idselected = id;
+        if(navigationView != null){
             navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    // checkColor();
-                    if (item.getItemId() == id) {
+                    if(item.getItemId() == id){
                         return true;
                     }
-                    switch (item.getItemId()) {
-                        case R.id.action_home:
-                            Log.i("Message:","action_home ???");
-                            startActivity(new Intent(getApplicationContext(),DigitalisationDetailsActivity.class));
-                            finish();
+
+                    switch (item.getItemId()){
+                        case R.id.action_add:
+                            Intent intent = new Intent(getBaseContext(), DigitalisationPv.class);
+                            startActivity(intent);
                             break;
 
-                        case R.id.action_add:
-                            Log.i("Message:","action_add !!!");
-                            startActivity(new Intent(getApplicationContext(),DigitalisationPv.class));
-                            finish();
+                        case R.id.action_home:
+                            intent = new Intent(getBaseContext(), DigitalisationDetailsActivity.class);
+                            startActivity(intent);
                             break;
 
                         case R.id.action_info:
-                            Log.i("Message:","action_info ???");
-                            startActivity(new Intent(getApplicationContext(),Infoperson.class));
+                            intent = new Intent(getBaseContext(), Infoperson.class);
+                            startActivity(intent);
                             break;
 
+                        default:
+                            break;
                     }
                     return false;
                 }
             });
-            if (id == R.id.action_home) {
+            if(id == R.id.action_home){
                 navigationView.setSelectedItemId(R.id.action_home);
             }
+            if(id == R.id.action_add){
+                navigationView.setSelectedItemId(R.id.action_add);
+            }
+            if(id == R.id.action_info){
+                navigationView.setSelectedItemId(R.id.action_info);
+            }
         }
-
     }
 
 }

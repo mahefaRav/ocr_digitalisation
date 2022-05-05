@@ -62,21 +62,18 @@ public class NavigationActivity extends AppCompatActivity {
 
                     switch (item.getItemId()){
                         case R.id.action_add:
-                            Intent intent = new Intent(getBaseContext(), DigitalisationPv.class);
-                            startActivity(intent);
+                            startActivity(new Intent(getApplicationContext(),DigitalisationPv.class));
+                            overridePendingTransition(0,0);
                             break;
 
                         case R.id.action_home:
-                            intent = new Intent(getBaseContext(), DigitalisationDetailsActivity.class);
-                            startActivity(intent);
+                            startActivity(new Intent(getApplicationContext(),DigitalisationDetailsActivity.class));
+                            overridePendingTransition(0,0);
                             break;
 
                         case R.id.action_info:
-                            intent = new Intent(getBaseContext(), Infoperson.class);
-                            startActivity(intent);
-                            break;
-
-                        default:
+                            startActivity(new Intent(getApplicationContext(),Infoperson.class));
+                            overridePendingTransition(0,0);
                             break;
                     }
                     return false;

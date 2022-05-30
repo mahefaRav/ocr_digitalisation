@@ -12,14 +12,16 @@ import com.android.ocr_digitalisation.R;
 import com.android.ocr_digitalisation.data.model.PvOcr;
 import com.android.ocr_digitalisation.ui.digitalisation.DigitalisationDetailsActivity;
 
-public class DetailsPv extends Fragment {
+public class PvFragment extends Fragment {
 
     private PvOcr pvOcr;
     private DigitalisationDetailsActivity activity;
 
-    public DetailsPv(){}
+    public PvFragment() {
+        // Required empty public constructor
+    }
 
-    public DetailsPv(PvOcr pvOcr, DigitalisationDetailsActivity activity) {
+    public PvFragment(PvOcr pvOcr, DigitalisationDetailsActivity activity) {
         this.pvOcr = pvOcr;
         this.activity = activity;
     }
@@ -27,8 +29,7 @@ public class DetailsPv extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        final View view = (ViewGroup) inflater.inflate(R.layout.fragment_details_pv, container, false);
-
-        return view;
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_pv, container, false);
     }
 }

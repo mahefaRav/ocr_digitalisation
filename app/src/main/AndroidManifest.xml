@@ -3,6 +3,7 @@
     package="com.android.ocr_digitalisation">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera" android:required="false"></uses-feature>
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OCRdigitalisation">
-        <activity android:name=".ui.digitalisation.DigitalisationPv"></activity>
+        <activity android:name=".ui.numerisation.NumerisationActivity"></activity>
+        <activity android:name=".ui.digitalisation.DigitalisationPv" />
         <activity android:name=".ui.infoUser.Infoperson" />
         <activity
             android:name=".ui.splash.SplashActivity"

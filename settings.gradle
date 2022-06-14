@@ -1,2 +1,3 @@
 rootProject.name = "OCR-digitalisation"
 include ':app'
+include ':scanlibrary'

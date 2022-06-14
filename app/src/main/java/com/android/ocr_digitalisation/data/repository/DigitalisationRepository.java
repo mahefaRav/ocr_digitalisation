@@ -29,7 +29,7 @@ public class DigitalisationRepository {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                activity.getListPDDigital(list);
+               // activity.getListPDDigital(list);
             }
         }, SPLASH_DISPLAY_LENGTH);
     }

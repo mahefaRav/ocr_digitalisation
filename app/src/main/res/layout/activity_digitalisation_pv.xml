@@ -165,6 +165,140 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                     android:layout_height="match_parent"
                                     android:layout_weight="2"
                                     android:paddingEnd="10dp"
+                                    android:paddingTop="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/mosk_medium_500"
+                                        android:text="District"
+                                        android:textSize="15dp" />
+
+                                    <RelativeLayout
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <Spinner
+                                            android:id="@+id/fiche_District"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/style_edittext"
+                                            android:paddingTop="5dp"
+                                            android:paddingBottom="7dp"
+                                            />
+
+                                        <!--
+                                        <EditText
+                                            android:id="@+id/fiche_District"
+                                            android:layout_width="match_parent"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:background="@drawable/style_edittext"
+                                            android:paddingTop="5dp"
+                                            android:paddingBottom="7dp"
+                                            android:layout_height="wrap_content"/>
+                                            -->
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:paddingEnd="10dp"
+                                    android:paddingTop="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/mosk_medium_500"
+                                        android:text="Commune"
+                                        android:textSize="15dp" />
+
+                                    <RelativeLayout
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <Spinner
+                                            android:id="@+id/fiche_Commune"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/style_edittext"
+                                            android:paddingTop="5dp"
+                                            android:paddingBottom="7dp"
+                                            />
+
+                                        <!--
+                                        <EditText
+                                            android:id="@+id/fiche_Commune"
+                                            android:layout_width="match_parent"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:background="@drawable/style_edittext"
+                                            android:paddingTop="5dp"
+                                            android:paddingBottom="7dp"
+                                            android:layout_height="wrap_content"/>
+                                            -->
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:paddingEnd="10dp"
+                                    android:paddingTop="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/mosk_medium_500"
+                                        android:text="Fokontany"
+                                        android:textSize="15dp" />
+
+                                    <RelativeLayout
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <Spinner
+                                            android:id="@+id/fiche_Fokontany"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/style_edittext"
+                                            android:paddingTop="5dp"
+                                            android:paddingBottom="7dp"
+                                            />
+
+                                        <!--
+                                        <EditText
+                                            android:id="@+id/fiche_Fokontany"
+                                            android:layout_width="match_parent"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:background="@drawable/style_edittext"
+                                            android:paddingTop="5dp"
+                                            android:paddingBottom="7dp"
+                                            android:layout_height="wrap_content"/>
+                                            -->
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:paddingEnd="10dp"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -180,7 +314,7 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                         android:layout_height="wrap_content">
 
                                         <EditText
-                                            android:id="@+id/numerisation_nom"
+                                            android:id="@+id/fiche_numerisation_nom"
                                             android:layout_width="match_parent"
                                             android:fontFamily="@font/roboto_medium"
                                             android:background="@drawable/style_edittext"
@@ -214,7 +348,7 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                         android:layout_height="wrap_content">
 
                                         <EditText
-                                            android:id="@+id/username"
+                                            android:id="@+id/fiche_numerisation_prenom"
                                             android:layout_width="match_parent"
                                             android:fontFamily="@font/roboto_medium"
                                             android:background="@drawable/style_edittext"
@@ -247,14 +381,24 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content">
 
-                                        <EditText
-                                            android:id="@+id/username"
-                                            android:layout_width="match_parent"
-                                            android:fontFamily="@font/roboto_medium"
-                                            android:background="@drawable/style_edittext"
-                                            android:paddingTop="5dp"
-                                            android:paddingBottom="7dp"
-                                            android:layout_height="wrap_content"/>
+                                        <!--
+                                       <DatePicker
+                                           android:id="@+id/fiche_numerisation_naissance"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+                                           android:calendarViewShown="false"
+                                           android:datePickerMode="spinner" />
+-->
+
+                                       <EditText
+                                           android:id="@+id/fiche_numerisation_naissance"
+                                           android:layout_width="match_parent"
+                                           android:fontFamily="@font/roboto_medium"
+                                           android:background="@drawable/style_edittext"
+                                           android:paddingTop="5dp"
+                                           android:paddingBottom="7dp"
+                                           android:layout_height="wrap_content"/>
+
 
                                     </RelativeLayout>
 
@@ -282,7 +426,7 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                         android:layout_height="wrap_content">
 
                                         <EditText
-                                            android:id="@+id/username"
+                                            android:id="@+id/fiche_numerisation_lieu_naissance"
                                             android:layout_width="match_parent"
                                             android:fontFamily="@font/roboto_medium"
                                             android:background="@drawable/style_edittext"
@@ -307,7 +451,7 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/mosk_medium_500"
-                                        android:text="N° CIN"
+                                        android:text="Sexe"
                                         android:textSize="15dp" />
 
                                     <RelativeLayout
@@ -315,116 +459,26 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content">
 
-                                        <EditText
-                                            android:id="@+id/username"
+                                        <Spinner
+                                            android:id="@+id/fiche_numerisation_sex"
                                             android:layout_width="match_parent"
-                                            android:fontFamily="@font/roboto_medium"
+                                            android:layout_height="wrap_content"
                                             android:background="@drawable/style_edittext"
                                             android:paddingTop="5dp"
                                             android:paddingBottom="7dp"
-                                            android:layout_height="wrap_content"/>
+                                            />
 
-                                    </RelativeLayout>
-
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="2"
-                                    android:paddingEnd="10dp"
-                                    android:paddingTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:fontFamily="@font/mosk_medium_500"
-                                        android:text="Domicile"
-                                        android:textSize="15dp" />
-
-                                    <RelativeLayout
-                                        android:layout_marginTop="5dp"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content">
-
+                                        <!--
                                         <EditText
-                                            android:id="@+id/username"
+                                            android:id="@+id/fiche_numerisation_sex"
                                             android:layout_width="match_parent"
                                             android:fontFamily="@font/roboto_medium"
                                             android:background="@drawable/style_edittext"
+                                            android:scrollbars = "vertical"
                                             android:paddingTop="5dp"
                                             android:paddingBottom="7dp"
                                             android:layout_height="wrap_content"/>
-
-                                    </RelativeLayout>
-
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="2"
-                                    android:paddingEnd="10dp"
-                                    android:paddingTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:fontFamily="@font/mosk_medium_500"
-                                        android:text="Arrondissement"
-                                        android:textSize="15dp" />
-
-                                    <RelativeLayout
-                                        android:layout_marginTop="5dp"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content">
-
-                                        <EditText
-                                            android:id="@+id/username"
-                                            android:layout_width="match_parent"
-                                            android:fontFamily="@font/roboto_medium"
-                                            android:background="@drawable/style_edittext"
-                                            android:paddingTop="5dp"
-                                            android:paddingBottom="7dp"
-                                            android:layout_height="wrap_content"/>
-
-                                    </RelativeLayout>
-
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="2"
-                                    android:paddingEnd="10dp"
-                                    android:paddingTop="5dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:fontFamily="@font/mosk_medium_500"
-                                        android:text="Profession"
-                                        android:textSize="15dp" />
-
-                                    <RelativeLayout
-                                        android:layout_marginTop="5dp"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content">
-
-                                        <EditText
-                                            android:id="@+id/username"
-                                            android:layout_width="match_parent"
-                                            android:fontFamily="@font/roboto_medium"
-                                            android:background="@drawable/style_edittext"
-                                            android:paddingTop="5dp"
-                                            android:paddingBottom="7dp"
-                                            android:layout_height="wrap_content"/>
+                                            -->
 
                                     </RelativeLayout>
 
@@ -452,7 +506,7 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                         android:layout_height="wrap_content">
 
                                         <EditText
-                                            android:id="@+id/username"
+                                            android:id="@+id/fiche_numerisation_pere"
                                             android:layout_width="match_parent"
                                             android:fontFamily="@font/roboto_medium"
                                             android:background="@drawable/style_edittext"
@@ -486,7 +540,143 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                         android:layout_height="wrap_content">
 
                                         <EditText
-                                            android:id="@+id/username"
+                                            android:id="@+id/fiche_numerisation_mere"
+                                            android:layout_width="match_parent"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:background="@drawable/style_edittext"
+                                            android:paddingTop="5dp"
+                                            android:paddingBottom="7dp"
+                                            android:layout_height="wrap_content"/>
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:paddingEnd="10dp"
+                                    android:paddingTop="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/mosk_medium_500"
+                                        android:text="Domicile"
+                                        android:textSize="15dp" />
+
+                                    <RelativeLayout
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:id="@+id/fiche_numerisation_domicile"
+                                            android:layout_width="match_parent"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:background="@drawable/style_edittext"
+                                            android:paddingTop="5dp"
+                                            android:paddingBottom="7dp"
+                                            android:layout_height="wrap_content"/>
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:paddingEnd="10dp"
+                                    android:paddingTop="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/mosk_medium_500"
+                                        android:text="Profession"
+                                        android:textSize="15dp" />
+
+                                    <RelativeLayout
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:id="@+id/fiche_numerisation_profession"
+                                            android:layout_width="match_parent"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:background="@drawable/style_edittext"
+                                            android:paddingTop="5dp"
+                                            android:paddingBottom="7dp"
+                                            android:layout_height="wrap_content"/>
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:paddingEnd="10dp"
+                                    android:paddingTop="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/mosk_medium_500"
+                                        android:text="N° CIN"
+                                        android:textSize="15dp" />
+
+                                    <RelativeLayout
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:id="@+id/fiche_numerisation_cin"
+                                            android:layout_width="match_parent"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:background="@drawable/style_edittext"
+                                            android:paddingTop="5dp"
+                                            android:paddingBottom="7dp"
+                                            android:layout_height="wrap_content"/>
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:paddingEnd="10dp"
+                                    android:paddingTop="5dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/mosk_medium_500"
+                                        android:text="Le"
+                                        android:textSize="15dp" />
+
+                                    <RelativeLayout
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:id="@+id/fiche_numerisation_le"
                                             android:layout_width="match_parent"
                                             android:fontFamily="@font/roboto_medium"
                                             android:background="@drawable/style_edittext"
@@ -520,7 +710,7 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                         android:layout_height="wrap_content">
 
                                         <EditText
-                                            android:id="@+id/username"
+                                            android:id="@+id/fiche_numerisation_faita"
                                             android:layout_width="match_parent"
                                             android:fontFamily="@font/roboto_medium"
                                             android:background="@drawable/style_edittext"
@@ -538,15 +728,15 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                     android:layout_height="match_parent"
                                     android:layout_weight="2"
                                     android:paddingEnd="10dp"
-                                    android:paddingTop="5dp"
                                     android:paddingBottom="10dp"
+                                    android:paddingTop="5dp"
                                     android:orientation="vertical">
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/mosk_medium_500"
-                                        android:text="Le"
+                                        android:text="Numero de série"
                                         android:textSize="15dp" />
 
                                     <RelativeLayout
@@ -555,7 +745,7 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                         android:layout_height="wrap_content">
 
                                         <EditText
-                                            android:id="@+id/username"
+                                            android:id="@+id/fiche_numerisation_numero_de_serie"
                                             android:layout_width="match_parent"
                                             android:fontFamily="@font/roboto_medium"
                                             android:background="@drawable/style_edittext"
@@ -564,7 +754,6 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                             android:layout_height="wrap_content"/>
 
                                     </RelativeLayout>
-
 
                                 </LinearLayout>
 
@@ -662,7 +851,7 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                 >
 
                                 <Button
-                                    android:id="@+id/validation_cin_recto"
+                                    android:id="@+id/fiche_validation_cin_recto"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_horizontal"
@@ -770,7 +959,7 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                 >
 
                                 <Button
-                                    android:id="@+id/validation_cin_verso"
+                                    android:id="@+id/fiche_validation_cin_verso"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_horizontal"
@@ -878,13 +1067,32 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                                 >
 
                                 <Button
-                                    android:id="@+id/validation_feuille"
+                                    android:id="@+id/fiche_validation_feuille"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_horizontal"
                                     android:backgroundTint="@android:color/holo_green_light"
                                     android:text="Insérer une image"
                                     android:textAllCaps="false" />
+
+                                <Button
+                                    android:id="@+id/fiche_validation_feuille_scanner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:backgroundTint="@android:color/holo_blue_light"
+                                    android:text="Scanner"
+                                    android:textAllCaps="false" />
+
+                                <Button
+                                    android:id="@+id/fiche_validation_feuille_media"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:backgroundTint="@android:color/holo_orange_light"
+                                    android:text="Media"
+                                    android:textAllCaps="false" />
+
 
                                 <ImageView
                                     android:id="@+id/numerisation_feuille"
@@ -921,7 +1129,7 @@ tools:context=".ui.digitalisation.DigitalisationPv">
                             android:layout_height="wrap_content">
 
                             <Button
-                                android:id="@+id/detail_pv"
+                                android:id="@+id/fiche_validation_recensement"
                                 android:text="VALIDATION"
                                 android:textAllCaps="false"
                                 android:backgroundTint="@color/colorRedShadow"

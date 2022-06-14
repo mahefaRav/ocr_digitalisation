@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">OCR-digitalisation</string>
+    <string name="app_name">SCANNER-digitalisation</string>
     <string name="action_sign_in_short">CONNEXION</string>
     <string name="action_sign_in_qr">QR</string>
     <string name="textview_username">Identifiant</string>
